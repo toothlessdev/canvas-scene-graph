@@ -36,7 +36,7 @@ export class CanvasEngine {
             this.canvas.element.height
         );
 
-        this.root.render(this.canvas.context, new DOMMatrix());
+        this.root.render(this.canvas.context, this.root.transform);
     }
 
     private addZoomEventListener() {
